@@ -10,16 +10,12 @@ public class GrocerTwo {
 
         String response = scan.nextLine();
         
-        scan.close();
-        
         for (int i = 0; i < store.length; i++) {
             if(store[i].equals(response)){
                 System.out.println("\nWe have " + store[i] + " in aisle: " + i);
                 break;
-            } else {
-                System.out.println("Sorry, we do not have " + response);
-                break;
-            }
+            } 
         }
+        scan.close();
     }
 }
